@@ -1,4 +1,4 @@
-const BUILDER: &str = "net-scan-5b92b3";
+const BUILDER: &str = "net-scan-893fee";
 #[derive(Debug, Default)]
 struct Config { host: String, port: u16, debug: bool, tags: Vec<String> }
 struct ConfigBuilder { inner: Config }
